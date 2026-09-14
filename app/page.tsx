@@ -2,39 +2,8 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { articles } from "@/lib/articles";
 
-const articles = [
-  {
-    category: "SHADOW WORK",
-    title: "Why We Hide the Parts of Ourselves We Need to Understand",
-    excerpt:
-      "The traits we reject don't disappear — they often find other ways to surface.",
-    date: "SEP 12, 2026",
-    read: "8 MIN READ",
-    
-      image: "/images/shadow-work.jpg",
-  },
-  {
-    category: "SELF-SABOTAGE",
-    title: "The Hidden Reasons You Keep Getting in Your Own Way",
-    excerpt:
-      "Sometimes self-sabotage is a form of protection for something deeper.",
-    date: "SEP 8, 2026",
-    read: "6 MIN READ",
-  
-     image: "/images/self-sabotage.jpg",
-  },
-  {
-    category: "INNER WORK",
-    title: "Learning to Sit With the Parts of Yourself You Don't Like",
-    excerpt:
-      "Real inner work isn't about becoming someone else. It's about becoming honest.",
-    date: "SEP 3, 2026",
-    read: "7 MIN READ",
-
-      image: "/images/self-acceptance.jpg",
-  },
-];
 
 const topics = [
   {
