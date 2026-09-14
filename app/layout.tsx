@@ -42,59 +42,63 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-[#f7f5ef] text-[#202622]`}
 
       ><header className="border-b border-[#202622]/15 bg-[#f7f5ef]">
-          <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-            <Link
-              href="/"
-       className="font-serif text-2xl font-semibold tracking-tight !text-[#111511]"
-            >
-              Facing My Shadow
-            </Link>
-<nav className="hidden items-center gap-8 text-sm font-medium text-[#202622] md:flex">
-              <Link
-                href="/"
-                className="transition hover:text-[#202622]"
-              >
-                Home
-              </Link>
+  <div className="mx-auto max-w-6xl px-6 py-4 md:py-6">
 
-              <Link
-                href="/journal"
-                className="transition hover:text-[#202622]"
-              >
-                Journal
-              </Link>
+    {/* Logo + desktop navigation */}
+    <div className="flex items-center justify-between">
+      <Link
+        href="/"
+        className="font-serif text-2xl font-semibold tracking-tight !text-[#111511]"
+      >
+        Facing My Shadow
+      </Link>
 
-              <Link
-                href="/topics"
-                className="transition hover:text-[#202622]"
-              >
-                Topics
-              </Link>
+      <nav className="hidden items-center gap-8 text-sm text-[#4f5750] md:flex">
+        <Link href="/" className="transition hover:text-[#202622]">
+          Home
+        </Link>
+        <Link href="/journal" className="transition hover:text-[#202622]">
+          Journal
+        </Link>
+        <Link href="/topics" className="transition hover:text-[#202622]">
+          Topics
+        </Link>
+        <Link href="/about" className="transition hover:text-[#202622]">
+          About
+        </Link>
+        <Link href="/contact" className="transition hover:text-[#202622]">
+          Contact
+        </Link>
+        <Link
+          href="/journal"
+          className="border border-[#344137] bg-[#344137] px-5 py-2.5 text-xs text-white transition hover:bg-[#202622]"
+        >
+          Explore the Journal
+        </Link>
+      </nav>
+    </div>
 
-              <Link
-                href="/about"
-                className="transition hover:text-[#202622]"
-              >
-                About
-              </Link>
+    {/* Mobile navigation */}
+    <nav className="mt-4 flex items-center justify-center gap-5 border-t border-[#202622]/10 pt-4 text-sm text-[#4f5750] md:hidden">
+      <Link href="/" className="whitespace-nowrap">
+        Home
+      </Link>
+      <Link href="/journal" className="whitespace-nowrap">
+        Journal
+      </Link>
+      <Link href="/topics" className="whitespace-nowrap">
+        Topics
+      </Link>
+      <Link href="/about" className="whitespace-nowrap">
+        About
+      </Link>
+      <Link href="/contact" className="whitespace-nowrap">
+        Contact
+      </Link>
+    </nav>
 
-              <Link
-                href="/contact"
-                className="transition hover:text-[#202622]"
-              >
-                Contact
-              </Link>
-            </nav>
-
-            <Link
-              href="/journal"
-              className="border border-[#344137] bg-[#344137] px-5 py-2.5 text-xs text-white transition hover:bg-[#202622]"
-            >
-              Explore the Journal
-            </Link>
-          </div>
-        </header>
-
+  </div>
+</header>
         {children}
       </body>
     </html>
