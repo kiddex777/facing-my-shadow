@@ -32,6 +32,17 @@ export const articles: Article[] = [
     published: true,
   },
 
+    {
+    title: "Carl Jung and Shadow Work: Understanding the Shadow Self",
+    excerpt:
+      "Explore Carl Jung's concept of the shadow, how shadow work connects to Jungian psychology, and what understanding your hidden self can teach you about yourself.",
+    category: "Shadow Work",
+    date: "September 2026",
+    image: "/images/shadow-work.jpg",
+    slug: "carl-jung-shadow-work",
+    published: true,
+  },
+
   {
     title: "Why We Hide the Parts of Ourselves We Need to Understand",
     excerpt:
