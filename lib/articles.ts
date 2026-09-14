@@ -19,6 +19,18 @@ export const articles: Article[] = [
     slug: "shadow-work-prompts-for-beginners",
     published: true,
   },
+
+  {
+    title: "Shadow Work Exercises: 10 Practices to Understand Yourself Better",
+    excerpt:
+      "Explore 10 simple shadow work exercises to understand your emotions, triggers, relationships, self-sabotage, and hidden patterns with greater honesty and compassion.",
+    category: "Shadow Work",
+    date: "September 2026",
+    image: "/images/shadow-work.jpg",
+    slug: "shadow-work-exercises",
+    published: true,
+  },
+
   {
     title: "Why We Hide the Parts of Ourselves We Need to Understand",
     excerpt:
