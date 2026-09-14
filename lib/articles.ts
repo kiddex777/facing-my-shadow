@@ -6,6 +6,7 @@ export type Article = {
   image: string;
   slug: string;
   published: boolean;
+  read?: string;
 };
 
 export const articles: Article[] = [
